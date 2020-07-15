@@ -7,7 +7,7 @@ import utils
 
 supported_ciphers = [
     {'cipher_name' : 'AES128-SHA',
-        'cipher' : '{{AES128-SHA}}',
+        'cipher' : '{AES128-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -20,7 +20,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'AES256-SHA',
-        'cipher' : '{{AES256-SHA}}',
+        'cipher' : '{AES256-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -33,7 +33,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-AES128-SHA',
-        'cipher' : '{{DHE-RSA-AES128-SHA}}',
+        'cipher' : '{DHE-RSA-AES128-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -46,7 +46,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-AES256-SHA',
-        'cipher' : '{{DHE-RSA-AES256-SHA}}',
+        'cipher' : '{DHE-RSA-AES256-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -59,7 +59,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-AES128-GCM-SHA256',
-        'cipher' : '{{DHE-RSA-AES128-GCM-SHA256}}',
+        'cipher' : '{DHE-RSA-AES128-GCM-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -72,7 +72,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-ECDSA-AES128-SHA',
-        'cipher' : '{{ECDHE-ECDSA-AES128-SHA}}',
+        'cipher' : '{ECDHE-ECDSA-AES128-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -85,7 +85,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-ECDSA-AES256-SHA',
-        'cipher' : '{{ECDHE-ECDSA-AES256-SHA}}',
+        'cipher' : '{ECDHE-ECDSA-AES256-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -98,7 +98,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-RSA-AES128-SHA',
-        'cipher' : '{{ECDHE-RSA-AES128-SHA}}',
+        'cipher' : '{ECDHE-RSA-AES128-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -111,7 +111,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-RSA-AES256-SHA',
-        'cipher' : '{{ECDHE-RSA-AES256-SHA}}',
+        'cipher' : '{ECDHE-RSA-AES256-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -124,7 +124,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-ECDSA-CHACHA20-POLY1305',
-        'cipher' : '{{ECDHE-ECDSA-CHACHA20-POLY1305}}',
+        'cipher' : '{ECDHE-ECDSA-CHACHA20-POLY1305}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -137,7 +137,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-CHACHA20-POLY1305',
-        'cipher' : '{{DHE-RSA-CHACHA20-POLY1305}}',
+        'cipher' : '{DHE-RSA-CHACHA20-POLY1305}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -150,7 +150,7 @@ supported_ciphers = [
         },	
 
     {'cipher_name' : 'CAMELLIA128-SHA',
-        'cipher' : '{{CAMELLIA128-SHA}}',
+        'cipher' : '{CAMELLIA128-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -163,7 +163,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'CAMELLIA256-SHA',
-        'cipher' : '{{CAMELLIA256-SHA}}',
+        'cipher' : '{CAMELLIA256-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -176,7 +176,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-CAMELLIA128-SHA',
-        'cipher' : '{{DHE-RSA-CAMELLIA128-SHA}}',
+        'cipher' : '{DHE-RSA-CAMELLIA128-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -189,7 +189,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-CAMELLIA256-SHA',
-        'cipher' : '{{DHE-RSA-CAMELLIA256-SHA}}',
+        'cipher' : '{DHE-RSA-CAMELLIA256-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -202,7 +202,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'AES128-SHA256',
-        'cipher' : '{{AES128-SHA256}}',
+        'cipher' : '{AES128-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -215,7 +215,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'AES256-SHA256',
-        'cipher' : '{{AES256-SHA256}}',
+        'cipher' : '{AES256-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -228,7 +228,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-AES128-SHA256',
-        'cipher' : '{{DHE-RSA-AES128-SHA256}}',
+        'cipher' : '{DHE-RSA-AES128-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -241,7 +241,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'AES128-GCM-SHA256',
-        'cipher' : '{{AES128-GCM-SHA256}}',
+        'cipher' : '{AES128-GCM-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -254,7 +254,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'AES256-GCM-SHA384',
-        'cipher' : '{{AES256-GCM-SHA384}}',
+        'cipher' : '{AES256-GCM-SHA384}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -267,7 +267,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-RSA-AES128-GCM-SHA256',
-        'cipher' : '{{ECDHE-RSA-AES128-GCM-SHA256}}',
+        'cipher' : '{ECDHE-RSA-AES128-GCM-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -280,7 +280,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-RSA-AES256-GCM-SHA384',
-        'cipher' : '{{ECDHE-RSA-AES256-GCM-SHA384}}',
+        'cipher' : '{ECDHE-RSA-AES256-GCM-SHA384}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -293,7 +293,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-RSA-AES128-SHA256',
-        'cipher' : '{{ECDHE-RSA-AES128-SHA256}}',
+        'cipher' : '{ECDHE-RSA-AES128-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -306,7 +306,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-RSA-AES256-SHA384',
-        'cipher' : '{{ECDHE-RSA-AES256-SHA384}}',
+        'cipher' : '{ECDHE-RSA-AES256-SHA384}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -319,7 +319,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-AES256-SHA256',
-        'cipher' : '{{DHE-RSA-AES256-SHA256}}',
+        'cipher' : '{DHE-RSA-AES256-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -332,7 +332,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DHE-RSA-AES256-GCM-SHA384',
-        'cipher' : '{{DHE-RSA-AES256-GCM-SHA384}}',
+        'cipher' : '{DHE-RSA-AES256-GCM-SHA384}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -345,7 +345,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-RSA-CHACHA20-POLY1305',
-        'cipher' : '{{ECDHE-RSA-CHACHA20-POLY1305}}',
+        'cipher' : '{ECDHE-RSA-CHACHA20-POLY1305}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -358,7 +358,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'TLS_AES_128_GCM_SHA256',
-        'cipher' : '{{TLS_AES_128_GCM_SHA256}}',
+        'cipher' : '{TLS_AES_128_GCM_SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -371,7 +371,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'TLS_AES_256_GCM_SHA384',
-        'cipher' : '{{TLS_AES_256_GCM_SHA384}}',
+        'cipher' : '{TLS_AES_256_GCM_SHA384}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -384,7 +384,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'TLS_CHACHA20_POLY1305_SHA256',
-        'cipher' : '{{TLS_CHACHA20_POLY1305_SHA256}}',
+        'cipher' : '{TLS_CHACHA20_POLY1305_SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -397,7 +397,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-ECDSA-AES128-GCM-SHA256',
-        'cipher' : '{{ECDHE-ECDSA-AES128-GCM-SHA256}}',
+        'cipher' : '{ECDHE-ECDSA-AES128-GCM-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -410,7 +410,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-ECDSA-AES256-GCM-SHA384',
-        'cipher' : '{{ECDHE-ECDSA-AES256-GCM-SHA384}}',
+        'cipher' : '{ECDHE-ECDSA-AES256-GCM-SHA384}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -423,7 +423,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-ECDSA-AES128-SHA256',
-        'cipher' : '{{ECDHE-ECDSA-AES128-SHA256}}',
+        'cipher' : '{ECDHE-ECDSA-AES128-SHA256}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -436,7 +436,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'ECDHE-ECDSA-AES256-SHA384',
-        'cipher' : '{{ECDHE-ECDSA-AES256-SHA384}}',
+        'cipher' : '{ECDHE-ECDSA-AES256-SHA384}',
         'sslv3': 0,
         'tls1': 0,
         'tls1_1': 0,
@@ -449,7 +449,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'RC4-MD5',
-        'cipher' : '{{RC4-MD5}}',
+        'cipher' : '{RC4-MD5}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -462,7 +462,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'RC4-SHA',
-        'cipher' : '{{RC4-SHA}}',
+        'cipher' : '{RC4-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -475,7 +475,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DES-CBC-SHA',
-        'cipher' : '{{DES-CBC-SHA}}',
+        'cipher' : '{DES-CBC-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -488,7 +488,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'DES-CBC3-SHA',
-        'cipher' : '{{DES-CBC3-SHA}}',
+        'cipher' : '{DES-CBC3-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
@@ -501,7 +501,7 @@ supported_ciphers = [
         },
 
     {'cipher_name' : 'SEED-SHA',
-        'cipher' : '{{SEED-SHA}}',
+        'cipher' : '{SEED-SHA}',
         'sslv3' : '{sslv3}',
         'tls1' : '{tls1}',
         'tls1_1' : '{tls1_1}',
