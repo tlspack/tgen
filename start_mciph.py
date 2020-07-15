@@ -30,8 +30,8 @@ cfj_template = '''
             "app_list" : [
                 {{
                     "app_type" : "tls_client",
-                    "app_label" : "AES128_SHA_CLIENT",
-                    "enable" : {AES128_SHA},
+                    "app_label" : "AES128-SHA-CLIENT",
+                    "enable" : {AES128-SHA},
                     "conn_per_sec" : {cps},
                     "max_pending_conn_count" : {max_pipeline},
                     "max_active_conn_count" : {max_active},
@@ -150,8 +150,8 @@ cfj_template = '''
             "app_list" : [
                 {{
                     "app_type" : "tls_server",
-                    "app_label" : "AES128_SHA_SERVER",
-                    "enable" : {AES128_SHA},
+                    "app_label" : "AES128-SHA-SERVER",
+                    "enable" : {AES128-SHA},
                     "srv_list" : [
                         {{
                             "srv_label" : "100.2{subnet_id}.51.1",
@@ -236,10 +236,7 @@ cfj_template = '''
 '''
 
 def add_arguments_cb(arg_parser):
-    arg_parser.add_argument('--AES128_SHA'
-                                , action="store_true"
-                                , default=False
-                                , help = '0/1')
+    pass
 
 
 if __name__ == '__main__':
