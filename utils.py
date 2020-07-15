@@ -52,11 +52,6 @@ def get_arguments (description, add_arguments_cb):
                                 , default=host_info['cores']/2
                                 , help = 'zones ')
 
-    arg_parser.add_argument('--cipher'
-                                , action="store"
-                                , help = 'command name'
-                                , required=True)
-
     arg_parser.add_argument('--cps'
                                 , action="store"
                                 , type=int
