@@ -514,7 +514,7 @@ supported_ciphers = [
 ]
 
 tls_client_template = '''
-    {{
+    {{{{
         "app_type" : "tls_client",
         "app_label" : "{cipher_name}-CLIENT",
         "enable" : {cipher},
@@ -523,7 +523,7 @@ tls_client_template = '''
         "max_active_conn_count" : {{max_active}},
         "total_conn_count" : 0,
         "cs_grp_list" : [
-            {{
+            {{{{
                 "cs_grp_label" : "cs_grp_1",
                 "enable" : {sslv3},
                 "srv_ip"   : "{server_ip_prefix}{{subnet_id}}.51.1",
@@ -544,7 +544,7 @@ tls_client_template = '''
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
             }},
-            {{
+            {{{{
                 "cs_grp_label" : "cs_grp_2",
                 "enable" : {tls1},
                 "srv_ip"   : "{server_ip_prefix}{{subnet_id}}.51.2",
@@ -564,8 +564,8 @@ tls_client_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
-            {{
+            }}}},
+            {{{{
                 "cs_grp_label" : "cs_grp_3",
                 "enable" : {tls1_1},
                 "srv_ip"   : "{server_ip_prefix}{{subnet_id}}.51.3",
@@ -585,8 +585,8 @@ tls_client_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
-            {{
+            }}}},
+            {{{{
                 "cs_grp_label" : "cs_grp_4",
                 "enable" : {tls1_2},
                 "srv_ip"   : "{server_ip_prefix}{{subnet_id}}.51.4",
@@ -606,8 +606,8 @@ tls_client_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
-            {{
+            }}}},
+            {{{{
                 "cs_grp_label" : "cs_grp_5",
                 "enable" : {tls1_3},
                 "srv_ip"   : "{server_ip_prefix}{{subnet_id}}.51.5",
@@ -627,18 +627,18 @@ tls_client_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }}
+            }}}}
         ]
-    }}
+    }}}}
 '''
 
 tls_server_template = '''
-    {{
+    {{{{
         "app_type" : "tls_server",
         "app_label" : "{cipher_name}-SERVER",
         "enable" : {cipher},
         "srv_list" : [
-            {{
+            {{{{
                 "srv_label" : "{server_ip_prefix}{{subnet_id}}.51.1",
                 "enable" : {sslv3},
                 "srv_ip" : "{server_ip_prefix}{{subnet_id}}.51.1",
@@ -656,8 +656,8 @@ tls_server_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
-            {{
+            }}}},
+            {{{{
                 "srv_label" : "{server_ip_prefix}{{subnet_id}}.51.2",
                 "enable" : {tls1},
                 "srv_ip" : "{server_ip_prefix}{{subnet_id}}.51.2",
@@ -675,8 +675,8 @@ tls_server_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
-            {{
+            }}}},
+            {{{{
                 "srv_label" : "{server_ip_prefix}{{subnet_id}}.51.3",
                 "enable" : {tls1_1},
                 "srv_ip" : "{server_ip_prefix}{{subnet_id}}.51.3",
@@ -694,8 +694,8 @@ tls_server_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
-            {{
+            }}}},
+            {{{{
                 "srv_label" : "{server_ip_prefix}{{subnet_id}}.51.4",
                 "enable" : {tls1_2},
                 "srv_ip" : "{server_ip_prefix}{{subnet_id}}.51.4",
@@ -713,8 +713,8 @@ tls_server_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
-            {{
+            }}}},
+            {{{{
                 "srv_label" : "{server_ip_prefix}{{subnet_id}}.51.5",
                 "enable" : {tls1_3},
                 "srv_ip" : "{server_ip_prefix}{{subnet_id}}.51.5",
@@ -732,9 +732,9 @@ tls_server_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }}
+            }}}}
         ]
-    }}
+    }}}}
 '''
 
 cfj_template_part1 = '''
