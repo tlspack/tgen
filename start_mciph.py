@@ -816,8 +816,8 @@ if __name__ == '__main__':
         if i:
             cfj_template_part2 += ','
             cfj_template_part4 += ','
-        cfj_template_part2 += tls_client_template(**supported_ciphers[i])
-        cfj_template_part4 += tls_server_template(**supported_ciphers[i])
+        cfj_template_part2 += tls_client_template.format(**supported_ciphers[i])
+        cfj_template_part4 += tls_server_template.format(**supported_ciphers[i])
 
 
     cfj_template = cfj_template_part1 + cfj_template_part2 + cfj_template_part3 + cfj_template_part4 + cfj_template_part5
