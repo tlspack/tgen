@@ -5,6 +5,8 @@ import argparse
 import cmds
 import json
 
+supported_ciphers = ['AES128-SHA']
+
 def get_arguments (description, add_arguments_cb):
     arg_parser = argparse.ArgumentParser(description = description)
 
@@ -70,6 +72,11 @@ def get_arguments (description, add_arguments_cb):
                                 , default=100
                                 , help = 'max_active : 1 - 2000000')
 
+    arg_parser.add_argument('--cipher'
+                                , action="store"
+                                , help = 'command name'
+                                , required=True)
+
     arg_parser.add_argument('--sslv3'
                                 , action="store_true"
                                 , default=False
@@ -107,5 +114,13 @@ def get_arguments (description, add_arguments_cb):
     cmd_args.tls1_1 = 1 if cmd_args.tls1_1 else 0
     cmd_args.tls1_2 = 1 if cmd_args.tls1_2 else 0
     cmd_args.tls1_3 = 1 if cmd_args.tls1_3 else 0
+
+    cmd_args_map = vars (cmd_args)
+    selected_ciphers = map(lambda x : x.strip(), cmd_args.cipher.split(':'))
+    for ciph in supported_ciphers:
+        if ciph in selected_ciphers:
+            cmd_args_map[ciph] = 1
+        else:
+            cmd_args_map[ciph] = 0
 
     return cmd_args

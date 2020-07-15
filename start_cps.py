@@ -255,11 +255,6 @@ def add_arguments_cb(arg_parser):
                                 , default=False
                                 , help = '0/1')
 
-    arg_parser.add_argument('--cipher'
-                                , action="store"
-                                , help = 'command name'
-                                , required=True)
-
 
 if __name__ == '__main__':
     CmdArgs = utils.get_arguments("cps test", add_arguments_cb)
