@@ -6,8 +6,7 @@ import cmds
 import json
 
 def get_arguments (description, add_arguments_cb):
-    arg_parser 
-        = argparse.ArgumentParser(description = description)
+    arg_parser = argparse.ArgumentParser(description = description)
 
     add_arguments_cb (arg_parser)
 
