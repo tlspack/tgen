@@ -543,7 +543,7 @@ tls_client_template = '''
                 "sc_data_len" : 128,
                 "cs_start_tls_len" : 0,
                 "sc_start_tls_len" : 0
-            }},
+            }}}},
             {{{{
                 "cs_grp_label" : "cs_grp_2",
                 "enable" : {tls1},
