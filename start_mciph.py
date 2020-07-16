@@ -367,7 +367,7 @@ supported_ciphers = [
         'srv_cert' : '/rundir/certs/server.cert',
         'srv_key' : '/rundir/certs/server.key',
         'client_ip_prefix' : '37.2',
-        'server_ip_prefix' : '127.2'
+        'server_ip_prefix' : '139.2'
         },
 
     {'cipher_name' : 'TLS_AES_256_GCM_SHA384',
@@ -781,7 +781,7 @@ cfj_template_part3 = '''
                         "118.2{subnet_id}.51.0/24" , "119.2{subnet_id}.51.0/24" , "120.2{subnet_id}.51.0/24" , 
                         "121.2{subnet_id}.51.0/24" , "122.2{subnet_id}.51.0/24" , "123.2{subnet_id}.51.0/24" , 
                         "124.2{subnet_id}.51.0/24" , "125.2{subnet_id}.51.0/24" , "126.2{subnet_id}.51.0/24" , 
-                        "127.2{subnet_id}.51.0/24" , "128.2{subnet_id}.51.0/24" , "129.2{subnet_id}.51.0/24" , 
+                        "139.2{subnet_id}.51.0/24" , "128.2{subnet_id}.51.0/24" , "129.2{subnet_id}.51.0/24" , 
                         "130.2{subnet_id}.51.0/24" , "131.2{subnet_id}.51.0/24" , "132.2{subnet_id}.51.0/24" , 
                         "133.2{subnet_id}.51.0/24" , "134.2{subnet_id}.51.0/24" , "135.2{subnet_id}.51.0/24" , 
                         "136.2{subnet_id}.51.0/24" , "137.2{subnet_id}.51.0/24" , "138.2{subnet_id}.51.0/24" ],
